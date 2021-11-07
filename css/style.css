@@ -1,0 +1,188 @@
+
+/*===== default css =====*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-full{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.container-full:before,
+.container-full:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.col-50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-33{
+	width: 33.33%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-25{
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+
+.col-30{
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-70{
+	width:70%;
+	float: left;
+	padding: 0 15px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/*======= site css start ======*/
+
+/*========01. header css ============*/
+
+header{
+	background: #fff;
+	padding: 18px 0;
+}
+
+.main-menu{
+	list-style: none;
+	float: right;
+	padding: 12px 0;
+}
+
+.main-menu li{
+	display: inline-block;
+}
+
+.main-menu li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #808080;
+	margin: 0 0 0 20px;
+	transition: .3s;
+}
+
+.main-menu li a:hover{
+	color: #ff5421
+}
+
+.main-menu li a i{
+	transition: .3s;
+}
+
+.main-menu li a:hover i{
+	transform: rotate(180deg)
+}
+
+/*========01. home css ============*/
+
+.home{
+	background: url("../img/home/01.jpg");
+	padding: 160px 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.home:before{
+	content:"";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	left: 0;
+	top: 0;
+	opacity: .5;
+	z-index: -1;
+}
+
+
+.home h6{
+	font-size: 17px;
+	color: #FF5421;
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+.home h1{
+	font-size: 70px;
+	line-height: 77px;
+	font-weight: 500;
+	padding: 15px 0;
+}
+
+.home p{
+	font-size: 18px;
+	line-height: 28.8px;
+	padding-bottom: 50px;
+}
+.btn{
+	background: #ff5421;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	padding: 18px 35px;
+	display: inline-block;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: .3s;
+}
+
+.btn:hover{
+	background: #e04314;
+}
+
+
+
+
